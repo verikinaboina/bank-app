@@ -1,0 +1,35 @@
+<div class="main-title">
+    <h2 class="text-center">
+        Welcome to Desh!
+    </h2>
+</div>
+<div class="card pad">
+    <h2 class="card-header text-center"> User register</h2>
+    <div class="card-body">
+        <form [formGroup]="form" (ngSubmit)="RegUser()">
+            <div class="mb-4">
+                <label class="form-label">First name</label>
+                <input type="text" name="firstName" class="form-control" formControlName="firstName" placeholder="Enter user first Name"
+                [ngClass]="{'is-invalid': submitted && getVal?.controls?.[firstName]?.errors }"/>
+                <div class="text-danger" *ngIf="submitted && getVal?.['firstName']?.errors?.['required']">
+                    First name is required
+                </div>
+                <label class="form-label field-gap">Last name</label>
+                <input type="text" name="lastName" class="form-control" formControlName="lastName" placeholder="Enter user last Name"/>
+                <div class="text-danger" *ngIf="submitted && getVal?.['lastName']?.errors?.['required']">
+                    Last name is required
+                </div>
+                <label class="form-label field-gap">Password</label>
+                <input type="password" name="password" class="form-control" formControlName="password" placeholder="Enter password"/>
+                <div class="text-danger" *ngIf=" submitted && getVal?.['password']?.errors?.['required']">
+                    Password is required
+                </div>
+            </div>
+            <div>
+                <button class="btn btn-primary">Register</button>
+                <button class="btn btn-danger snd-btn" (click)="clear()">Reset</button>
+                <a routerLink="../login" class="btn btn-link">login</a>
+            </div>
+        </form>
+    </div>
+</div>

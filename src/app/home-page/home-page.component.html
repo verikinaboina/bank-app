@@ -1,0 +1,71 @@
+<div class="bg-src">
+    <img class="logo" />
+    <mat-toolbar class="items-right">
+        <span>Accounts</span>
+        <a mat-button>About</a>
+        <a mat-button>Contact us</a>
+        <div>
+            <input type="search" />
+            <button color="secondary" routerLink="../login">Log out</button>
+        </div>
+    </mat-toolbar>
+</div>
+<div style="display: flex; margin: 10% 10% 10% 15%;">
+    <div class="card" style="margin: 10px;">
+        <mat-card class="card-design card-body credit-card">
+            <mat-card-header>
+                <mat-card-title> Platinum Card ...2865</mat-card-title>
+            </mat-card-header> <br />
+            <mat-card-content>
+                <mat-card-actions>
+                    <h3>
+                        $ 2500.06
+                    </h3>
+                    <button style="margin-left: 10%; float: right;" mat-raised-button (click)="tableDetails()"> View Account</button>
+                </mat-card-actions>
+                <p> Current balance</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="card" style="margin: 10px;">
+        <mat-card class="card-design card-body auto-loan">
+            <mat-card-header>
+                <mat-card-title class="card-title"> Auto Loan ...1190</mat-card-title>
+            </mat-card-header> <br />
+            <mat-card-content>
+                <mat-card-actions>
+                    <h3>
+                        $ 15001.01
+                    </h3>
+                    <button style="margin-left: 10%;" mat-raised-button> View Account</button>
+                </mat-card-actions>
+                <p> Principle balance</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="card" style="margin: 10px;">
+        <mat-card class="card-design card-body checking">
+            <mat-card-header>
+                <mat-card-title class="ccard-title"> 365 Chckings ...1007</mat-card-title>
+            </mat-card-header> <br />
+            <mat-card-content>
+                <mat-card-actions>
+                    <h3>
+                        $ 5001.01
+                    </h3>
+                    <button style="margin-left: 10%;" mat-raised-button> View Account</button>
+                </mat-card-actions>
+                <p> Available balance</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
+
+<footer class="bg-light text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © {{ dateVal }} Copyright:
+      <a class="text-dark" >Venkata Erikinaboina</a>
+    </div>
+    <!-- Copyright -->
+  </footer>

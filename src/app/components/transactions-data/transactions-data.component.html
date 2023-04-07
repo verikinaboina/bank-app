@@ -1,0 +1,25 @@
+<div class="banner text-center">
+    <h4 class="title-info">Account information </h4>
+    <a routerLink="../home">Return home</a>
+</div>
+<table mat-table class="card-body table-data" >
+    <thead>
+        <h4 class="details-bar"> Transactions for the current Month</h4>
+        <tr class="header-list">
+            <th scope="col">Date</th>
+            <th scope="col">Description</th>
+            <th scope="col">Date</th>
+            <th scope="col">category</th>
+            <th scope="col">Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr *ngFor="let data of transData">
+                <td>{{ data.date }}</td>
+                <td>{{ data.company }}</td>
+                <td>{{ data.transactionId }}</td>
+                <td>{{ data.category }}</td>
+                <td>${{ data.amount }}</td>
+            </tr>
+    </tbody>
+</table>

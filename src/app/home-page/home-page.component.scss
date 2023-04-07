@@ -1,0 +1,75 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.mat-toolbar {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.mat-button {
+    color: white;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.flExp {
+    flex: 1 1 auto;
+}
+
+.items-right {
+    height: auto;
+    align-items: baseline;
+    color: gold;
+    background-image: url(../../assets/cc-card.jpeg) ;
+    background-size: cover;
+    border-radius: 1px;
+    justify-content: baseline;
+    font-weight: 600;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo {
+    content: url(../../assets/bank-logo.png);
+    width: 180px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg-src {
+    background-color: #84b3df;
+}
+
+.card-design {
+    width: 400px; 
+    height: 200px; 
+    background-color: #b6b3b2; 
+    margin: 10px;
+    background-image: url(../../assets/bank-logo.png);
+}
+
+.card-title {
+    text-align: center; 
+    margin: 3px; box-shadow: chartreuse;
+    border-radius: 5px; 
+}
+
+.credit-card {
+ background-image: url(../../assets/cc-card.jpeg);
+ color: white;
+}
+
+.auto-loan {
+    background-image: url(../../assets/auto-loan.jpeg);
+    background-size: cover;
+    background-position-y: -5vh;
+    color: black;
+}
+
+.checking {
+    background-image: url(../../assets/checking.png);
+    color: white;
+}

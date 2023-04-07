@@ -1,0 +1,30 @@
+<div class="main-title">
+    <h2 class="text-center">
+        Welcome to Desh!
+    </h2>
+</div>
+
+<div class="card pad">
+    <h2 class="card-header text-center"> User login</h2>
+    <div class="card-body">
+        <form [formGroup]="form" (ngSubmit)="submitUser()">
+            <div class="mb-3">
+                <label class="form-label text-start">User name</label>
+                <input type="text" class="form-control" formControlName="userName" />
+                <div class="text-danger" *ngIf="submitted && getVal?.['userName']?.errors?.['required']">
+                    User name is required
+                </div>
+
+                <label class="form-label text-start">Password</label>
+                <input type="password" class="form-control" formControlName="password" />
+                <div class="text-danger" *ngIf="submitted && getVal?.['password']?.errors?.['required']">
+                    Password is required
+                </div>
+            </div>
+            <div>
+                <button class="btn btn-primary">Login</button>
+                <a routerLink="../register" class="btn btn-link">Register</a>
+            </div>
+        </form>
+    </div>
+</div>

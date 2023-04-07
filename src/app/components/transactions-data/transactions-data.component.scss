@@ -1,0 +1,38 @@
+.table-data {
+    width: 90%;
+    margin: 5% 5% 0% 5%;
+    border: 0.2rem;
+    border-color: rgb(59, 95, 216);
+    border-radius: 1rem;
+    border-width: 10px;
+    box-shadow: red;
+}
+table {
+    width: 600px;
+}
+.banner {
+    margin-top: 10px;
+    height: 100px;
+    width: 100%;
+    background-color: lightblue;
+    border-radius: 10px;
+
+}
+.title-info {
+    padding-top: 10px;
+    border-radius: 10px;
+}
+.details-bar {
+    background-color: lightblue;
+    border-radius: 10px;
+}
+.header-list {
+    background-color: rgb(179, 240, 237);
+}
+tbody tr:nth-child(even) {
+    background-color: rgb(136, 149, 155);
+    color: #fff;
+}
+tbody tr:hover {
+    background-color: rgb(192, 162, 231);
+}
