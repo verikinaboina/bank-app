@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormGroup, FormBuilder, Validators, MinLengthValidator } from '@angular/forms';
+import { User } from '../constants/user';
 
 @Component({
   selector: 'app-register',
@@ -11,10 +12,9 @@ export class RegisterComponent implements OnInit {
   form!: FormGroup;
   submitted = false;
   loading = false;
-  showloader: boolean = false;
   firstName: any;
-  pasword: string | undefined;
-  lastName: string | undefined;
+  pasword: string | any;
+  lastName: string | any;
 
   constructor(
     private router: Router,
@@ -32,7 +32,7 @@ export class RegisterComponent implements OnInit {
 
   RegUser() {
     this.submitted = true;
-    if (this.form.invalid) { return; }
+    if (this.form.invalid) { return }
     const response = confirm("Are you sure you want to do that?");
     if (response) {
       this.router.navigateByUrl('/login');

@@ -10,6 +10,10 @@
         </div>
     </mat-toolbar>
 </div>
+<div>
+    <app-rxjs></app-rxjs>
+</div>
+
 <div style="display: flex; margin: 10% 10% 10% 15%;">
     <div class="card" style="margin: 10px;">
         <mat-card class="card-design card-body credit-card">
@@ -21,7 +25,8 @@
                     <h3>
                         $ 2500.06
                     </h3>
-                    <button style="margin-left: 10%; float: right;" mat-raised-button (click)="tableDetails()"> View Account</button>
+                    <button style="margin-left: 10%; float: right;" mat-raised-button (click)="tableDetails()"> View
+                        Account</button>
                 </mat-card-actions>
                 <p> Current balance</p>
             </mat-card-content>
@@ -37,7 +42,7 @@
                     <h3>
                         $ 15001.01
                     </h3>
-                    <button style="margin-left: 10%;" mat-raised-button> View Account</button>
+                    <button style="margin-left: 10%;" (click)="autoLoan()" mat-raised-button> View Account</button>
                 </mat-card-actions>
                 <p> Principle balance</p>
             </mat-card-content>
@@ -64,8 +69,8 @@
 <footer class="bg-light text-center text-lg-start">
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © {{ dateVal }} Copyright:
-      <a class="text-dark" >Venkata Erikinaboina</a>
+        © {{ dateVal }} Copyright:
+        <a class="text-dark">Venkata Erikinaboina</a>
     </div>
     <!-- Copyright -->
-  </footer>
+</footer>

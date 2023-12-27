@@ -11,7 +11,6 @@ export class LoginComponent implements OnInit {
   form!: FormGroup;
   submitted = false;
   loading = false;
-  showloader: boolean = false;
 
   constructor(private formBuilder: FormBuilder,
     private router: Router) { }
@@ -32,15 +31,9 @@ export class LoginComponent implements OnInit {
     if (this.form.invalid) { return; }
 
     this.loading = true;
-    this.setTimer();
     console.log("userName", this.form.controls['userName'].value);
     console.log("userName", this.form.controls['password'].value);
     this.router.navigateByUrl('/home');
   }
 
-  setTimer() {
-   setTimeout(() => {
-    this.showloader  = true; 
-   }, 3000);
-  }
 }

@@ -1,0 +1,23 @@
+<div>
+    <div class="banner text-center title-info">
+        <h4 class="title-info">Account information </h4>
+        <a routerLink="../home">Return home</a>
+    </div>
+    <table mat-table class="card-body table-data">
+        <thead style="background-color: cadetblue;">
+            <tr>
+                <td colspan="1">Id</td>
+                <td colspan="1">Desc</td>
+                <td colspan="1">Rank</td>
+            </tr>
+        </thead>
+
+        <tbody style="background-color:rgba(68, 191, 207, 0.2);">
+            <tr *ngFor="let data of todoDataName">
+                <td colspan="1">{{ data.id }}</td>
+                <td colspan="1">{{ data.todo }}</td>
+                <td colspan="1">{{ data.userId }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
