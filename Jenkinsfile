@@ -26,9 +26,6 @@ pipeline {
                 echo 'npm run test:watch'
             }
         }
-        stage('Lint') {
-            echo 'ng lint'
-        }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
